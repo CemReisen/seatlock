@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: seatlock
+  profiles:
+    default: dev
+
+managgement:
+  endpoints:
+    web:
+      exposure:
+        iclude: health
+        

@@ -30,6 +30,24 @@ public class User {
         this.email = email;
         this.passwordHash = passwordHash;
     }
+    
+    public Long getId() {
+        return id;
+    }
 
-    // getter'lar: getId, getEmail, getPasswordHash, getRole, getCreatedAt
+    public String getEmail() {
+        return email;
+    }
+
+    public String getPasswordHash() {
+        return passwordHash;
+    }
+
+    public Role getRole() {
+        return role;
+    }
+
+    public Instant getCreatedAt() {
+        return createdAt;
+    }
 }

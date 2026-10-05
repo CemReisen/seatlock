@@ -25,4 +25,10 @@ public class AuthController {
         User user = authService.register(request.email(), request.password());
         return RegisterResponse.from(user);
     }
+
+    @PostMapping("/login")
+    public LoginResponse login(@Valid @RequestBody LoginRequest request) {
+        String token = authService.login(request.email(), request.password());
+        return new LoginResponse(token);
+    }
 }
